@@ -1,119 +1,175 @@
-# Expense Tracker - Fullstack Application
+# 🚀 Expense Tracker - Fullstack Application
 
-A fullstack expense tracking application built with Angular (frontend) and Spring Boot (backend).
+A full-stack expense tracking application built with **Angular** (frontend) and **Spring Boot** (backend).
 
-## Technologies Used
+---
 
-### Frontend (Angular)
-- Angular CLI: version 17.x
-- Node.js: version 20.x
-- TypeScript: version 5.x
-- Bootstrap (for styling)
+## 🛠️ Technologies Used
 
-### Backend (Spring Boot)
-- Java: version 22
-- Spring Boot: version 3.4.2
-- Spring Security
-- JWT Authentication
-- JPA/Hibernate
-- Gradle: version 8.12.1
+### 🌐 Frontend (Angular)
+- **Angular CLI**: v17.x
+- **Node.js**: v20.x
+- **TypeScript**: v5.x
+- **Bootstrap** (for styling)
 
-### Database
-- MySQL
+### ⚙️ Backend (Spring Boot)
+- **Java**: v22
+- **Spring Boot**: v3.4.2
+- **Spring Security** (for authentication & authorization)
+- **JWT Authentication**
+- **JPA/Hibernate** (ORM for database interaction)
+- **Gradle**: v8.12.1
 
-## Features
-- User Authentication (JWT)
-- Expense Management (CRUD operations)
-- Category Management
-- Secure API endpoints
-- Responsive UI
+### 🗄️ Database
+- **MySQL** (Relational Database Management System)
 
-## Prerequisites
-- JDK 22
-- Node.js and npm
-- MySQL Server
-- Gradle
-- Angular CLI (`npm install -g @angular/cli`)
+---
 
-## Project Structure
+## ✨ Features
+✅ **User Authentication (JWT-based login & registration)**  
+✅ **Expense Management (Create, Read, Update, Delete - CRUD)**  
+✅ **Category Management**  
+✅ **Secure API Endpoints with Role-based Access Control**  
+✅ **Responsive UI with Bootstrap**  
+✅ **CORS Configuration for Frontend Integration**  
+✅ **Password Encryption using BCrypt**  
+
+---
+
+## 📂 Project Structure
+
 ```plaintext
-et/
+expense-tracker/
 ├── et-fe/          # Angular frontend
 ├── et-back/        # Spring Boot backend
-└── README.md
+└── README.md       # Documentation
+```
 
-Setup and Installation
-Backend Setup
-1. Navigate to `et-back` directory
-2. Copy application.properties_sample to application.properties
-3. Configure your database settings in application.properties
+---
+
+## ⚡ Setup and Installation
+
+### 🔹 Backend Setup
+
+1. Navigate to the backend directory:
+   ```sh
+   cd et-back
+   ```
+2. Copy `application.properties_sample` to `application.properties`:
+   ```sh
+   cp application.properties_sample application.properties
+   ```
+3. Configure your **database settings** in `application.properties`.
 4. Build the project:
-./gradlew build
-
+   ```sh
+   ./gradlew build
+   ```
 5. Run the application:
-./gradlew bootRun
+   ```sh
+   ./gradlew bootRun
+   ```
 
-Frontend Setup
-1. Navigate to et-fe directory
+### 🔹 Frontend Setup
+
+1. Navigate to the frontend directory:
+   ```sh
+   cd et-fe
+   ```
 2. Install dependencies:
-npm install
+   ```sh
+   npm install
+   ```
 3. Start the development server:
-ng serve
+   ```sh
+   ng serve
+   ```
+4. Open your browser and go to:  
+   **`http://localhost:4200`**
 
-API Endpoints
-Authentication
-POST /api/auth/login - User login
-POST /api/auth/register - User registration
-Expenses
-GET /api/expenses - Get all expenses
-GET /api/expenses/{id} - Get expense by ID
-POST /api/expenses - Create new expense
-PUT /api/expenses/{id} - Update expense
-DELETE /api/expenses/{id} - Delete expense
-Categories
-GET /api/categories - Get all categories
-POST /api/categories - Create new category
-PUT /api/categories/{id} - Update category
-DELETE /api/categories/{id} - Delete category
-Security
-JWT-based authentication
-Password encryption using BCrypt
-Protected API endpoints
-CORS configuration for frontend integration
-Contributing
-Fork the repository
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-License
-This project is licensed under the MIT License - see the LICENSE file for details
+---
 
-This README provides a comprehensive overview of your project, including:
-- Technology stack and versions
-- Setup instructions for both frontend and backend
-- API endpoint documentation
-- Project structure
-- Security features
-- Contributing guidelines
+## 🔗 API Endpoints
 
-You can further customize it by adding:
-- Screenshots of the application
-- More detailed configuration instructions
-- Deployment guidelines
-- Troubleshooting section
-- Code examples
-This README provides a comprehensive overview of your project, including:
-- Technology stack and versions
-- Setup instructions for both frontend and backend
-- API endpoint documentation
-- Project structure
-- Security features
-- Contributing guidelines
+### 🔑 Authentication
+- **POST** `/api/auth/login` - User login
+- **POST** `/api/auth/register` - User registration
 
-You can further customize it by adding:
-- Screenshots of the application
-- More detailed configuration instructions
-- Deployment guidelines
-- Troubleshooting section
-- Code examples
+### 💰 Expenses
+- **GET** `/api/expenses` - Get all expenses
+- **GET** `/api/expenses/{id}` - Get expense by ID
+- **POST** `/api/expenses` - Create a new expense
+- **PUT** `/api/expenses/{id}` - Update an expense
+- **DELETE** `/api/expenses/{id}` - Delete an expense
+
+### 🏷️ Categories
+- **GET** `/api/categories` - Get all categories
+- **POST** `/api/categories` - Create a new category
+- **PUT** `/api/categories/{id}` - Update a category
+- **DELETE** `/api/categories/{id}` - Delete a category
+
+---
+
+## 🔒 Security
+
+- **JWT-based authentication** for secure API access.
+- **Password encryption** using BCrypt.
+- **Role-based access control** to protect sensitive routes.
+- **CORS configuration** to allow frontend-backend communication.
+
+---
+
+## 👥 Contributing
+
+We welcome contributions! To contribute:
+
+1. **Fork** the repository.
+2. Create your feature branch:
+   ```sh
+   git checkout -b feature/AmazingFeature
+   ```
+3. **Commit** your changes:
+   ```sh
+   git commit -m "Add some AmazingFeature"
+   ```
+4. **Push** to the branch:
+   ```sh
+   git push origin feature/AmazingFeature
+   ```
+5. Open a **Pull Request** 🚀
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+---
+
+## 📸 Screenshots (Optional)
+
+_Add screenshots of the application UI here to make the README more interactive._
+
+---
+
+## 📌 Additional Enhancements (Future Scope)
+- 📊 **Expense Analytics** (Charts & Reports)
+- 📅 **Recurring Expenses** feature
+- 🌍 **Multi-language support**
+- 💳 **Payment Integration** for tracking payments
+- 📱 **Mobile App** using Ionic/React Native
+
+---
+
+## 🛠 Troubleshooting
+
+### ❓ Common Issues & Solutions
+**1. Angular frontend not loading?**  
+👉 Make sure the backend is running (`./gradlew bootRun`).
+
+**2. Database connection error?**  
+👉 Check MySQL service is running and credentials in `application.properties`.
+
+**3. JWT token issue?**  
+👉 Ensure you include the token in API requests (`Authorization: Bearer <token>`).
+
+---
