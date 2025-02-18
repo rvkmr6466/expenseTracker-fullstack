@@ -1,0 +1,27 @@
+<div class="expense-list">
+    <div class="expense-container">
+        <div class="expense-row expense-header">
+          <div class="expense-cell">Id</div>
+          <div class="expense-cell">Name</div>
+          <div class="expense-cell">Amount</div>
+          <div class="expense-cell">Category</div>
+          <div class="expense-cell">Date</div>
+          <div class="expense-cell">Actions</div>
+        </div>
+      
+        <div class="expense-row" *ngFor="let expense of expenses; let i = index">
+          <div class="expense-cell">{{ i+1 }}</div>
+          <div class="expense-cell">{{ expense.name }}</div>
+          <div class="expense-cell">₹ {{ expense.amount }}</div>
+          <div class="expense-cell">{{ expense.category }}</div>
+          <div class="expense-cell">{{ expense.date | date:'longDate' }}</div>
+          <div class="expense-cell">
+            <button class="edit-btn" (click)="onEdit(expense.id ?? 0)">Edit</button>
+            <button class="delete-btn" (click)="onDelete(expense?.id ?? 0)">Delete</button>
+          </div>
+        </div>
+      </div>
+</div>
+<button mat-fab class="floating-btn" (click)="openAddExpenseModal()">
+  <mat-icon>add</mat-icon>
+</button>

@@ -1,0 +1,9 @@
+<div class="navbar">
+    <div class="title">EXPENSE TRACKER</div>
+    <div class="login-register-btn">
+        <div class="logout-btn navbar-btn" *ngIf="isLoggedIn()" (click)="goToHome()">Home</div>
+        <div class="logout-btn navbar-btn" *ngIf="isLoggedIn()" (click)="expenseList()">Expense List</div>
+        <div class="logout-btn navbar-btn" *ngIf="isLoggedIn()" (click)="logout()">Logout</div>
+        <div class="total-expenses" *ngIf="isLoggedIn()">Total: ₹ {{totalExpenses}}</div>
+    </div>
+</div>

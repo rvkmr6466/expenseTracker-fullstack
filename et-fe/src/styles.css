@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    background: #ebe6e6;
+    border-radius: 5px;
+}
+
+input,
+select {
+    border: 1px black;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px;
+}
+
+option {
+    background-color: #ffffff;
+}
+
+
+input,
+select,
+textarea {
+    color: #525252;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #525252;
+    opacity: 1;
+    /* Firefox */
+}
+
+::-ms-input-placeholder {
+    /* Edge 12 -18 */
+    color: #525252;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

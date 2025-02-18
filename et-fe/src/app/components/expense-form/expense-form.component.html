@@ -1,0 +1,19 @@
+<div class="expense-form-container">
+    <div class="expense-form">
+        <div class="add-expense-title">Add Expense</div>
+        <div class="form">
+            <form [formGroup]="expenseForm" (ngSubmit)="submitExpense()">
+                <input type="text" placeholder="Name" formControlName="name">
+                <input type="number" placeholder="Amount" formControlName="amount">
+                <select formControlName="category">
+                    <option value="" selected disabled hidden>Select Category</option>
+                    <option *ngFor="let category of categories" [value]="category?.name">
+                        {{ category?.name }}
+                    </option>
+                </select>
+                <input type="date" formControlName="date">
+                <button type="submit">Add Expense</button>
+            </form>
+        </div>
+    </div>
+</div>

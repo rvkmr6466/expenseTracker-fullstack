@@ -1,0 +1,100 @@
+# Ignore Node.js dependencies
+et-fe/node_modules
+et-fe/dist
+et-fe/.vscode/
+et-fe/.angular
+
+# Compiled output
+et-fe/dist
+et-fe/tmp
+et-fe/out-tsc
+et-fe/bazel-out
+et-fe/# Node
+et-fe/node_modules
+et-fe/npm-debug.log
+et-fe/yarn-error.log
+et-fe/# IDEs and editors
+et-fe/.idea/
+et-fe/.project
+et-fe/.classpath
+et-fe/.c9/
+et-fe/*.launch
+et-fe/.settings/
+et-fe/*.sublime-workspace
+et-fe/.editorsconfig
+et-fe/.gitignore
+ 
+et-fe/# Visual Studio Code
+et-fe/.vscode/*
+et-fe/!.vscode/settings.json
+et-fe/!.vscode/tasks.json
+et-fe/!.vscode/launch.json
+et-fe/!.vscode/extensions.json
+et-fe/.history/*
+
+et-fe/# Miscellaneous
+et-fe/.angular/cache
+et-fe/.sass-cache/
+et-fe/connect.lock
+et-fe/coverage
+et-fe/libpeerconnection.log
+et-fe/testem.log
+et-fe/typings
+et-fe/# System files
+et-fe/.DS_Store
+et-fe/Thumbs.db
+
+# Ignore Java build files
+et-back/target
+et-back/.idea
+et-back/.mvn
+et-back/HELP.md
+et-back/.gradle
+et-back/build/
+
+# Gradle-specific files
+et-back/.gradle/
+et-back/build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+et-back/HELP.md
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+
+# Eclipse files
+.classpath
+.project
+.settings/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+logs/
+spring.log
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Java compiled files
+*.class
+*.war
+*.jar
+
+# Dependency caching
+**/lib/
+**/libs/
+**/bin/
+
+# Application properties (sensitive info)
+application.properties
+application.yml
+application-dev.properties
+application-prod.properties
+
+

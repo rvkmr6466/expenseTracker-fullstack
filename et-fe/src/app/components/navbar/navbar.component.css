@@ -1,0 +1,43 @@
+.navbar {
+    width: 100% auto;
+    padding: 20px;
+    background: #000;
+    color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-weight: 600;
+    font-size: x-large;
+}
+.login-register-btn{
+    display: flex;
+    gap: 10px;
+}
+
+.logout-btn, .register-btn{
+    padding: 10px 20px; 
+    background: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    color: black;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.total-expenses {
+    padding: 10px 10px; 
+    color: chartreuse;
+    font-size: 18px;
+    border: 1px solid chartreuse;
+    border-radius: 5px;
+    font-weight: 100;
+}
+
+.navbar-btn {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+}
