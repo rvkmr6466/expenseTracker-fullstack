@@ -145,12 +145,6 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ---
 
-## 📸 Screenshots (Optional)
-
-_Add screenshots of the application UI here to make the README more interactive._
-
----
-
 ## 📌 Additional Enhancements (Future Scope)
 - 📊 **Expense Analytics** (Charts & Reports)
 - 📅 **Recurring Expenses** feature
